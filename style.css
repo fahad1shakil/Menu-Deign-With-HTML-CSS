@@ -1,0 +1,46 @@
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: red;
+  display: flex;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu li:hover > a {
+  background: #000;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ff3300;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.menu li:hover > .submenu {
+  display: block;
+}
+
+.submenu .submenu {
+  top: 0;
+  left: 100%;
+}
